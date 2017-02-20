@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "less": "lessc --autoprefix='last 2 versions' --source-map src/less/logo.less src/css/logo.css",
+    "less": "lessc --autoprefix='last 2 versions' --source-map src/less/index.less src/css/logo.css",
     "postless": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
     "start": "http-server ./ -o"
   },

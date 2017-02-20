@@ -3,7 +3,7 @@
   margin: 0 auto;
   width: 424px;
   height: 128px;
-  animation: logo-anim 8s ease 4s infinite alternate;
+  animation: logo-anim 8s ease-in-out 4s infinite alternate;
 }
 #logo > * {
   position: absolute;
@@ -15,32 +15,32 @@
   animation: inherit;
 }
 #logo [data-char="a"] {
+  z-index: 4;
   background-position: 0px;
   left: 0;
-  z-index: 4;
   animation-name: logo-anim-a;
 }
 #logo [data-char="v"] {
+  z-index: 3;
   background-position: -128px;
   left: 32px;
-  z-index: 3;
   animation-name: logo-anim-v;
 }
 #logo [data-char="i"] {
+  z-index: 5;
   background-position: -256px;
   left: 56px;
-  z-index: 5;
   animation-name: logo-anim-i;
 }
 #logo [data-char="n"] {
-  background-position: -384px;
   z-index: 2;
+  background-position: -384px;
   left: 176px;
   animation-name: logo-anim-n;
 }
 #logo [data-char="e"] {
-  background-position: -512px;
   z-index: 1;
+  background-position: -512px;
   left: 296px;
   animation-name: logo-anim-e;
 }
