@@ -1,0 +1,175 @@
+#logo {
+  position: relative;
+  margin: 0 auto;
+  width: 424px;
+  height: 128px;
+  animation: logo-anim 8s ease 4s infinite alternate;
+}
+#logo > * {
+  position: absolute;
+  left: 0;
+  width: 128px;
+  height: 128px;
+  background-size: 640px 128px;
+  background-image: url("../logo/avine-sprite-256.png");
+  animation: inherit;
+}
+#logo [data-char="a"] {
+  background-position: 0px;
+  left: 0;
+  z-index: 4;
+  animation-name: logo-anim-a;
+}
+#logo [data-char="v"] {
+  background-position: -128px;
+  left: 32px;
+  z-index: 3;
+  animation-name: logo-anim-v;
+}
+#logo [data-char="i"] {
+  background-position: -256px;
+  left: 56px;
+  z-index: 5;
+  animation-name: logo-anim-i;
+}
+#logo [data-char="n"] {
+  background-position: -384px;
+  z-index: 2;
+  left: 176px;
+  animation-name: logo-anim-n;
+}
+#logo [data-char="e"] {
+  background-position: -512px;
+  z-index: 1;
+  left: 296px;
+  animation-name: logo-anim-e;
+}
+@keyframes logo-anim {
+  20% {
+    width: 424px;
+  }
+  30% {
+    width: 128px;
+  }
+  45% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(360deg);
+  }
+  70% {
+    width: 128px;
+  }
+  80% {
+    width: 424px;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes logo-anim-a {
+  20% {
+    opacity: 1;
+    left: 0;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  30%,
+  70% {
+    opacity: 1;
+    left: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes logo-anim-v {
+  20% {
+    opacity: 1;
+    left: 32px;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  30%,
+  70% {
+    opacity: 1;
+    left: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+    left: 32px;
+  }
+}
+@keyframes logo-anim-i {
+  20% {
+    opacity: 1;
+    left: 56px;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  30%,
+  70% {
+    opacity: 1;
+    left: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+    left: 56px;
+  }
+}
+@keyframes logo-anim-n {
+  20% {
+    opacity: 1;
+    left: 176px;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  30%,
+  70% {
+    opacity: 1;
+    left: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+    left: 176px;
+  }
+}
+@keyframes logo-anim-e {
+  20% {
+    opacity: 1;
+    left: 296px;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  30%,
+  70% {
+    opacity: 1;
+    left: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+    left: 296px;
+  }
+}
+/*# sourceMappingURL=logo.css.map */
