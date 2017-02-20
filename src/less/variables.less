@@ -1,4 +1,5 @@
 
+// choose `32px`, `64px`, `128px`, `256px` or `512px`
 @char-size: 128px; // 128px
 
 @space: (@char-size / 16); // 8px
@@ -6,10 +7,11 @@
 
 @sprite-alias: unit(@char-size) * 2; // 256
 
-@shift-v: (@line + @space * 3);
-@shift-i: (@line + @space * 2);
+@shift-v: (@line + 2 * @space + @space);
+@shift-i: (@line + 2 * @space);
 
-@delta: @space; // choose between `@space` and `0`
+// choose `@space` or `0`
+@delta: @space;
 
 @left-a: 0;
 @left-v: (@left-a + @shift-v - @delta);
