@@ -1,12 +1,18 @@
 
 @char-size: 128px;
-@logo-size: 424px;
+@space: (@char-size / 16);
+
+@delta-v: 88;
+@delta-i: 96;
+@delta-vi: @delta-v + @delta-i;
 
 @left-a: 0;
-@left-v: 32px;
-@left-i: 56px;
-@left-n: 176px;
-@left-e: 296px;
+@left-v: (1 * (@char-size - @space) - @delta-v);
+@left-i: (2 * (@char-size - @space) - @delta-vi);
+@left-n: (3 * (@char-size - @space) - @delta-vi);
+@left-e: (4 * (@char-size - @space) - @delta-vi);
+
+@logo-size: (5 * @char-size - 4 * @space - @delta-vi);
 
 @opacity: 0.8;
 
