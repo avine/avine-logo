@@ -1,0 +1,48 @@
+
+@class: avn-logo;
+
+@animation-props: 8s ease-in-out 4s 2 alternate;
+
+@keyframe-opacity: 0.8;
+
+@base-size: 256; // choose `32`, `64`, `128`, `256` or `512`
+
+@scale05-breakpoint: 960px;
+@scale025-breakpoint: 480px;
+@scale0125-breakpoint: 360px;
+
+@scale05-delta: 64px;
+@scale025-delta: 96px;
+@scale0125-delta: 110px;
+
+// --- don't touch below ---
+
+@sprite-size: 2 * @base-size;
+
+@anim-x: ~"@{class}";
+
+@anim-a: ~"@{anim-x}-a";
+@anim-v: ~"@{anim-x}-v";
+@anim-i: ~"@{anim-x}-i";
+@anim-n: ~"@{anim-x}-n";
+@anim-e: ~"@{anim-x}-e";
+
+@char-size: unit(@base-size, px);
+
+@space: (@char-size / 16);
+@line: (@char-size / 8);
+
+@margin: (@char-size / 8);
+
+@shift-v: (@line + 2 * @space + @space);
+@shift-i: (@line + 2 * @space);
+
+@delta: @space; // choose `@space` or `0`
+
+@left-a: 0;
+@left-v: (@left-a + @shift-v - @delta);
+@left-i: (@left-v + @shift-i - @delta);
+@left-n: (@left-i + @char-size - @delta);
+@left-e: (@left-n + @char-size - @delta);
+
+@logo-size: (@left-e + @char-size);

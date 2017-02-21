@@ -9,7 +9,7 @@
     "less": "lessc --autoprefix='last 2 versions' --source-map src/less/index.less src/css/logo.css",
     "postless": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
 
-    "less2": "lessc --autoprefix='last 2 versions' --source-map src/less2/index.less src/css/logo.css",
+    "less2": "lessc --autoprefix='last 2 versions' --source-map src/less-alt/index.less src/css/logo.css",
     "postless2": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
 
     "start": "http-server ./ -o"

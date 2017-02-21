@@ -3,8 +3,6 @@
 
   @sprite-size: 2 * @base-size;
 
-  @class: avn-logo;
-
   @anim-x: ~"@{class}-@{base-size}";
 
   @anim-a: ~"@{anim-x}-a";
@@ -90,21 +88,21 @@
     100% { transform: rotate(360deg); }
   }
 
-  .keyframes(@anim, @left) {
-    @keyframes @anim {
+  .keyframes(@name, @left) {
+    @keyframes @name {
       20% {
         opacity: 1;
         left: @left;
       }
       25% {
-        opacity: @opacity;
+        opacity: @keyframe-opacity;
       }
       30%, 70%  {
         opacity: 1;
         left: 0;
       }
       75% {
-        opacity: @opacity;
+        opacity: @keyframe-opacity;
       }
       80% {
         opacity: 1;

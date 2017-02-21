@@ -1,0 +1,90 @@
+
+.@{class} {
+  margin: @margin 0;
+  transform-origin: 0% 50%;
+
+  > * {
+    position: relative;
+    margin: 0 auto;
+    width: @logo-size;
+    height: @char-size;
+    animation: @anim-x @animation-props;
+  }
+
+  [data-char] {
+    position: absolute;
+    left: 0;
+    width: @char-size;
+    height: @char-size;
+    background-size: (@char-size * 5) @char-size;
+    background-image: url("../logo/avine-sprite-@{sprite-size}.png");
+    animation: @animation-props;
+  }
+
+  [data-char="a"] {
+    z-index: 4;
+    background-position: 0px;
+    left: @left-a;
+    animation-name: @anim-a;
+  }
+
+  [data-char="v"] {
+    z-index: 3;
+    background-position: -@char-size;
+    left: @left-v;
+    animation-name: @anim-v;
+  }
+
+  [data-char="i"] {
+    z-index: 5;
+    background-position: -(@char-size * 2);
+    left: @left-i;
+    animation-name: @anim-i;
+  }
+
+  [data-char="n"] {
+    z-index: 2;
+    background-position: -(@char-size * 3);
+    left: @left-n;
+    animation-name: @anim-n;
+  }
+
+  [data-char="e"] {
+    z-index: 1;
+    background-position: -(@char-size * 4);
+    left: @left-e;
+    animation-name: @anim-e;
+  }
+}
+
+.@{class}-scale05 {
+  .scale(0.5, @scale05-delta);
+}
+
+.@{class}-scale025 {
+  .scale(0.25, @scale025-delta);
+}
+
+.@{class}-scale0125 {
+  .scale(0.125, @scale0125-delta);
+}
+
+.@{class}-responsive {
+  @media (max-width: @scale05-breakpoint) {
+    .scale(0.5, @scale05-delta);
+  }
+
+  @media (max-width: @scale025-breakpoint) {
+    .scale(0.25, @scale025-delta);
+  }
+
+  @media (max-width: @scale0125-breakpoint) {
+    .scale(0.125, @scale0125-delta);
+  }
+}
+
+.scale(@x, @delta) {
+  transform: scale(@x);
+  width: 100% / @x;
+  margin: (@margin * @x - @delta) 0;
+}

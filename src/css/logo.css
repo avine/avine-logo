@@ -1,3 +1,4 @@
+/* --- logo --- */
 .avn-logo {
   margin: 32px 0;
   transform-origin: 0% 50%;
@@ -7,7 +8,7 @@
   margin: 0 auto;
   width: 848px;
   height: 256px;
-  animation: logo-anim 8s ease-in-out 4s infinite alternate;
+  animation: avn-logo 8s ease-in-out 4s 2 alternate;
 }
 .avn-logo [data-char] {
   position: absolute;
@@ -16,37 +17,37 @@
   height: 256px;
   background-size: 1280px 256px;
   background-image: url("../logo/avine-sprite-512.png");
-  animation: 8s ease-in-out 4s infinite alternate;
+  animation: 8s ease-in-out 4s 2 alternate;
 }
 .avn-logo [data-char="a"] {
   z-index: 4;
   background-position: 0px;
   left: 0;
-  animation-name: logo-anim-a;
+  animation-name: avn-logo-a;
 }
 .avn-logo [data-char="v"] {
   z-index: 3;
   background-position: -256px;
   left: 64px;
-  animation-name: logo-anim-v;
+  animation-name: avn-logo-v;
 }
 .avn-logo [data-char="i"] {
   z-index: 5;
   background-position: -512px;
   left: 112px;
-  animation-name: logo-anim-i;
+  animation-name: avn-logo-i;
 }
 .avn-logo [data-char="n"] {
   z-index: 2;
   background-position: -768px;
   left: 352px;
-  animation-name: logo-anim-n;
+  animation-name: avn-logo-n;
 }
 .avn-logo [data-char="e"] {
   z-index: 1;
   background-position: -1024px;
   left: 592px;
-  animation-name: logo-anim-e;
+  animation-name: avn-logo-e;
 }
 .avn-logo-scale05 {
   transform: scale(0.5);
@@ -58,21 +59,33 @@
   width: 400%;
   margin: -88px 0;
 }
-@media (max-width: 1104px) {
+.avn-logo-scale0125 {
+  transform: scale(0.125);
+  width: 800%;
+  margin: -106px 0;
+}
+@media (max-width: 960px) {
   .avn-logo-responsive {
     transform: scale(0.5);
     width: 200%;
     margin: -48px 0;
   }
 }
-@media (max-width: 552px) {
+@media (max-width: 480px) {
   .avn-logo-responsive {
     transform: scale(0.25);
     width: 400%;
     margin: -88px 0;
   }
 }
-@keyframes logo-anim {
+@media (max-width: 360px) {
+  .avn-logo-responsive {
+    transform: scale(0.125);
+    width: 800%;
+    margin: -106px 0;
+  }
+}
+@keyframes avn-logo {
   20% {
     width: 848px;
   }
@@ -95,7 +108,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes logo-anim-a {
+@keyframes avn-logo-a {
   20% {
     opacity: 1;
     left: 0;
@@ -116,7 +129,7 @@
     left: 0;
   }
 }
-@keyframes logo-anim-v {
+@keyframes avn-logo-v {
   20% {
     opacity: 1;
     left: 64px;
@@ -137,7 +150,7 @@
     left: 64px;
   }
 }
-@keyframes logo-anim-i {
+@keyframes avn-logo-i {
   20% {
     opacity: 1;
     left: 112px;
@@ -158,7 +171,7 @@
     left: 112px;
   }
 }
-@keyframes logo-anim-n {
+@keyframes avn-logo-n {
   20% {
     opacity: 1;
     left: 352px;
@@ -179,7 +192,7 @@
     left: 352px;
   }
 }
-@keyframes logo-anim-e {
+@keyframes avn-logo-e {
   20% {
     opacity: 1;
     left: 592px;

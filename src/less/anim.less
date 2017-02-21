@@ -1,5 +1,5 @@
 
-@keyframes logo-anim {
+@keyframes @anim-x {
   20% { width: @logo-size; }
   30% { width: @char-size; }
   45% { transform: rotate(0deg); }
@@ -9,21 +9,21 @@
   100% { transform: rotate(360deg); }
 }
 
-.logo-anim-x(@name, @left) {
+.keyframes(@name, @left) {
   @keyframes @name {
     20% {
       opacity: 1;
       left: @left;
     }
     25% {
-      opacity: @opacity;
+      opacity: @keyframe-opacity;
     }
     30%, 70%  {
       opacity: 1;
       left: 0;
     }
     75% {
-      opacity: @opacity;
+      opacity: @keyframe-opacity;
     }
     80% {
       opacity: 1;
@@ -31,9 +31,8 @@
     }
   }
 }
-
-.logo-anim-x(logo-anim-a, @left-a);
-.logo-anim-x(logo-anim-v, @left-v);
-.logo-anim-x(logo-anim-i, @left-i);
-.logo-anim-x(logo-anim-n, @left-n);
-.logo-anim-x(logo-anim-e, @left-e);
+.keyframes(@anim-a, @left-a);
+.keyframes(@anim-v, @left-v);
+.keyframes(@anim-i, @left-i);
+.keyframes(@anim-n, @left-n);
+.keyframes(@anim-e, @left-e);
