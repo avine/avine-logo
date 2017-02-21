@@ -1,0 +1,133 @@
+
+.mixin(@base-size) {
+
+  @sprite-size: 2 * @base-size;
+
+  @class: avn-logo;
+
+  @anim-x: ~"@{class}-@{base-size}";
+
+  @anim-a: ~"@{anim-x}-a";
+  @anim-v: ~"@{anim-x}-v";
+  @anim-i: ~"@{anim-x}-i";
+  @anim-n: ~"@{anim-x}-n";
+  @anim-e: ~"@{anim-x}-e";
+
+  @char-size: unit(@base-size, px);
+
+  @space: (@char-size / 16);
+  @line: (@char-size / 8);
+
+  @margin: (@char-size / 8);
+
+  @shift-v: (@line + 2 * @space + @space);
+  @shift-i: (@line + 2 * @space);
+
+  @delta: @space; // choose `@space` or `0`
+
+  @left-a: 0;
+  @left-v: (@left-a + @shift-v - @delta);
+  @left-i: (@left-v + @shift-i - @delta);
+  @left-n: (@left-i + @char-size - @delta);
+  @left-e: (@left-n + @char-size - @delta);
+
+  @logo-size: (@left-e + @char-size);
+
+  .@{class} {
+    margin: @margin 0;
+
+    > * {
+      width: @logo-size;
+      height: @char-size;
+      animation-name: @anim-x;
+    }
+
+    [data-char] {
+      width: @char-size;
+      height: @char-size;
+      background-size: (@char-size * 5) @char-size;
+      background-image: url("../logo/avine-sprite-@{sprite-size}.png");
+    }
+
+    [data-char="a"] {
+      background-position: 0px;
+      left: @left-a;
+      animation-name: @anim-a;
+    }
+
+    [data-char="v"] {
+      background-position: -(@char-size * 1);
+      left: @left-v;
+      animation-name: @anim-v;
+    }
+
+    [data-char="i"] {
+      background-position: -(@char-size * 2);
+      left: @left-i;
+      animation-name: @anim-i;
+    }
+
+    [data-char="n"] {
+      background-position: -(@char-size * 3);
+      left: @left-n;
+      animation-name: @anim-n;
+    }
+
+    [data-char="e"] {
+      background-position: -(@char-size * 4);
+      left: @left-e;
+      animation-name: @anim-e;
+    }
+  }
+
+  @keyframes @anim-x {
+    20% { width: @logo-size; }
+    30% { width: @char-size; }
+    45% { transform: rotate(0deg); }
+    55% { transform: rotate(360deg); }
+    70% { width: @char-size; }
+    80% { width: @logo-size; }
+    100% { transform: rotate(360deg); }
+  }
+
+  .keyframes(@anim, @left) {
+    @keyframes @anim {
+      20% {
+        opacity: 1;
+        left: @left;
+      }
+      25% {
+        opacity: @opacity;
+      }
+      30%, 70%  {
+        opacity: 1;
+        left: 0;
+      }
+      75% {
+        opacity: @opacity;
+      }
+      80% {
+        opacity: 1;
+        left: @left;
+      }
+    }
+  }
+  .keyframes(@anim-a, @left-a);
+  .keyframes(@anim-v, @left-v);
+  .keyframes(@anim-i, @left-i);
+  .keyframes(@anim-n, @left-n);
+  .keyframes(@anim-e, @left-e);
+
+}
+
+@media (max-width: (480px - 1)) {
+  .mixin(64);
+}
+
+@media (min-width: 480px) and (max-width: (960px - 1)) {
+  .mixin(128);
+}
+
+@media (min-width: 960px) {
+  .mixin(256);
+}

@@ -1,0 +1,36 @@
+
+/* --- logo --- */
+
+.avn-logo {
+  > * {
+    position: relative;
+    margin: 0 auto;
+    animation: @animation;
+  }
+
+  [data-char] {
+    position: absolute;
+    left: 0;
+    animation: @animation;
+  }
+
+  [data-char="a"] {
+    z-index: 4;
+  }
+
+  [data-char="v"] {
+    z-index: 3;
+  }
+
+  [data-char="i"] {
+    z-index: 5;
+  }
+
+  [data-char="n"] {
+    z-index: 2;
+  }
+
+  [data-char="e"] {
+    z-index: 1;
+  }
+}
