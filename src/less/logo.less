@@ -1,4 +1,5 @@
-#logo {
+
+.avn-logo {
   margin: @margin 0;
   transform-origin: 0% 50%;
 
@@ -56,18 +57,24 @@
   }
 }
 
-@media (max-width: (@logo-size + @char-size)) {
-  #logo {
-    transform: scale(0.5);
-    width: 200%;
-    margin: (@margin / 2 - @char-size / 4) 0;
-  }
+.avn-logo-scale05 {
+  transform: scale(0.5);
+  width: 200%;
+  margin: (@margin / 2 - @char-size / 4) 0;
 }
 
-@media (max-width: ((@logo-size + @char-size) / 2)) {
-  #logo {
-    transform: scale(0.25);
-    width: 400%;
-    margin: (@margin / 4 - @char-size / (2 + 2 / 3)) 0;
+.avn-logo-scale025 {
+  transform: scale(0.25);
+  width: 400%;
+  margin: (@margin / 4 - @char-size / (2 + 2 / 3)) 0;
+}
+
+.avn-logo-responsive {
+  @media (max-width: (@logo-size + @char-size)) {
+    .avn-logo-scale05;
+  }
+
+  @media (max-width: ((@logo-size + @char-size) / 2)) {
+    .avn-logo-scale025;
   }
 }
