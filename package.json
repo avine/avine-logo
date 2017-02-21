@@ -5,14 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "less": "lessc --autoprefix='last 2 versions' --source-map src/less/index.less src/css/logo.css",
     "postless": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
-
-    "less2": "lessc --autoprefix='last 2 versions' --source-map src/less-alt/index.less src/css/logo.css",
-    "postless2": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
-
-    "start": "http-server ./ -o"
+    "less-alt": "lessc --autoprefix='last 2 versions' --source-map src/less-alt/index.less src/css/logo.css",
+    "postless-alt": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
+    "start": "http-server ./src -o"
   },
   "repository": {
     "type": "git",
