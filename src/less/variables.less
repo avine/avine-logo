@@ -1,9 +1,11 @@
 
 // choose `32px`, `64px`, `128px`, `256px` or `512px`
-@char-size: 128px; // 128px
+@char-size: 256px; // 128px
 
 @space: (@char-size / 16); // 8px
 @line: (@char-size / 8); // 16px
+
+@margin: (@char-size / 8);
 
 @sprite-alias: unit(@char-size) * 2; // 256
 
@@ -20,5 +22,7 @@
 @left-e: (@left-n + @char-size - @delta);
 
 @logo-size: (@left-e + @char-size);
+
+@animation: 8s ease-in-out 4s infinite alternate;
 
 @opacity: 0.8;
