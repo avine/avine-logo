@@ -2,4 +2,4 @@
 
 My personal logo
 
-![Image of Yaktocat](./screenshot.png)
+![Avine logo](./screenshot.png)
