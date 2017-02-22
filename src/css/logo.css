@@ -49,6 +49,10 @@
   left: 592px;
   animation-name: avn-logo-e;
 }
+.avn-logo-no-anim > *,
+.avn-logo-no-anim [data-char] {
+  animation: none;
+}
 .avn-logo-scale05 {
   transform: scale(0.5);
   width: 200%;
