@@ -9,9 +9,9 @@
     "postless": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
     "less-alt": "lessc --autoprefix='last 2 versions' --source-map src/less-alt/index.less src/css/logo.css",
     "postless-alt": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
-    "chokidar": "chokidar 'src/less/**/*.less' -c 'npm run less'",
-    "server": "browser-sync start --server src/ --no-notify --files src/*.html src/css/*.css",
-    "start": "npm run chokidar & npm run server"
+    "watch": "chokidar 'src/less/**/*.less' -c 'npm run less'",
+    "start": "browser-sync start --server src/ --serveStatic",
+    "dev": "npm run watch & npm start -- --files src/*.html src/css/*.css --no-inject-changes --no-notify"
   },
   "repository": {
     "type": "git",
