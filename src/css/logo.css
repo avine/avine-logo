@@ -1,9 +1,11 @@
 /* --- logo --- */
 .avn-logo {
+  display: block;
   margin: 32px 0;
   transform-origin: 0% 50%;
 }
 .avn-logo > * {
+  display: block;
   position: relative;
   margin: 0 auto;
   width: 848px;
