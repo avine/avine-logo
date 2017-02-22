@@ -11,9 +11,9 @@
 @scale025-breakpoint: 480px;
 @scale0125-breakpoint: 360px;
 
-@scale05-delta: 64px;
-@scale025-delta: 96px;
-@scale0125-delta: 110px;
+@scale05-margin-delta: 64px;
+@scale025-margin-delta: 96px;
+@scale0125-margin-delta: 110px;
 
 // --- don't touch below ---
 
@@ -29,20 +29,19 @@
 
 @char-size: unit(@base-size, px);
 
-@space: (@char-size / 16);
-@line: (@char-size / 8);
+@char-edge: (@char-size / 16);
+@char-line: (@char-size / 8);
 
-@margin: (@char-size / 8);
+@shift-v: (@char-line + 2 * @char-edge + @char-edge);
+@shift-i: (@char-line + 2 * @char-edge);
 
-@shift-v: (@line + 2 * @space + @space);
-@shift-i: (@line + 2 * @space);
-
-@delta: @space; // choose `@space` or `0`
+@spacing-delta: @char-edge; // choose `@char-edge` or `0`
 
 @left-a: 0;
-@left-v: (@left-a + @shift-v - @delta);
-@left-i: (@left-v + @shift-i - @delta);
-@left-n: (@left-i + @char-size - @delta);
-@left-e: (@left-n + @char-size - @delta);
+@left-v: (@left-a + @shift-v - @spacing-delta);
+@left-i: (@left-v + @shift-i - @spacing-delta);
+@left-n: (@left-i + @char-size - @spacing-delta);
+@left-e: (@left-n + @char-size - @spacing-delta);
 
 @logo-size: (@left-e + @char-size);
+@logo-margin: (@char-size / 8);

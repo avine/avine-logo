@@ -1,6 +1,6 @@
 
 .@{class} {
-  margin: @margin 0;
+  margin: @logo-margin 0;
   transform-origin: 0% 50%;
 
   > * {
@@ -58,33 +58,33 @@
 }
 
 .@{class}-scale05 {
-  .scale(0.5, @scale05-delta);
+  .scale(0.5, @scale05-margin-delta);
 }
 
 .@{class}-scale025 {
-  .scale(0.25, @scale025-delta);
+  .scale(0.25, @scale025-margin-delta);
 }
 
 .@{class}-scale0125 {
-  .scale(0.125, @scale0125-delta);
+  .scale(0.125, @scale0125-margin-delta);
 }
 
 .@{class}-responsive {
   @media (max-width: @scale05-breakpoint) {
-    .scale(0.5, @scale05-delta);
+    .scale(0.5, @scale05-margin-delta);
   }
 
   @media (max-width: @scale025-breakpoint) {
-    .scale(0.25, @scale025-delta);
+    .scale(0.25, @scale025-margin-delta);
   }
 
   @media (max-width: @scale0125-breakpoint) {
-    .scale(0.125, @scale0125-delta);
+    .scale(0.125, @scale0125-margin-delta);
   }
 }
 
 .scale(@x, @delta) {
   transform: scale(@x);
   width: 100% / @x;
-  margin: (@margin * @x - @delta) 0;
+  margin: (@logo-margin * @x - @delta) 0;
 }

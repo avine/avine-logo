@@ -13,26 +13,25 @@
 
   @char-size: unit(@base-size, px);
 
-  @space: (@char-size / 16);
-  @line: (@char-size / 8);
+  @char-edge: (@char-size / 16);
+  @char-line: (@char-size / 8);
 
-  @margin: (@char-size / 8);
+  @shift-v: (@char-line + 2 * @char-edge + @char-edge);
+  @shift-i: (@char-line + 2 * @char-edge);
 
-  @shift-v: (@line + 2 * @space + @space);
-  @shift-i: (@line + 2 * @space);
-
-  @delta: @space; // choose `@space` or `0`
+  @spacing-delta: @char-edge; // choose `@char-edge` or `0`
 
   @left-a: 0;
-  @left-v: (@left-a + @shift-v - @delta);
-  @left-i: (@left-v + @shift-i - @delta);
-  @left-n: (@left-i + @char-size - @delta);
-  @left-e: (@left-n + @char-size - @delta);
+  @left-v: (@left-a + @shift-v - @spacing-delta);
+  @left-i: (@left-v + @shift-i - @spacing-delta);
+  @left-n: (@left-i + @char-size - @spacing-delta);
+  @left-e: (@left-n + @char-size - @spacing-delta);
 
   @logo-size: (@left-e + @char-size);
+  @logo-margin: (@char-size / 8);
 
   .@{class} {
-    margin: @margin 0;
+    margin: @logo-margin 0;
 
     > * {
       width: @logo-size;
