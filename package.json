@@ -4,7 +4,7 @@
   "description": "My personal logo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "exit 0",
     "less": "lessc --autoprefix='last 2 versions' --source-map src/less/index.less src/css/logo.css",
     "postless": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
     "less-alt": "lessc --autoprefix='last 2 versions' --source-map src/less-alt/index.less src/css/logo.css",
