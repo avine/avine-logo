@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+  <title>Avine logo</title>
+
+  <style>
+    body {
+        margin: 0;
+        background-color: #673AB7;  
+        text-align: center;      
+    }
+    .logo {
+        margin: 32px auto;
+        position: relative;
+        width: 800px; /* 848px */
+        height: 256px;
+        transition: all 1s ease;
+    }
+    .logo img {
+        position: absolute;
+        top: 0;
+        height: 100%;      
+        transition: all 1s ease;
+    }
+
+    .logo-a { z-index: 4; left: 0px; }
+    .logo-v { z-index: 3; left: 64px; }
+    .logo-i { z-index: 5; left: 112px; }
+    .logo-n { z-index: 1; left: 352px; } /* z-index: 2; */
+    .logo-e { z-index: 2; left: 544px; } /* z-index: 1; left: 592px; */
+
+    .logo.sprite {
+      width: 256px !important;
+    }
+    .logo.sprite img {
+      left: 0 !important;
+    }
+
+    .half {
+         transform: scale(0.5);
+    }
+    [hide] {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="output/A.svg" class="logo-a" />
+        <img src="output/V.svg" class="logo-v" />
+        <img src="output/I.svg" class="logo-i" />
+        <img src="output/N.svg" class="logo-n" />
+        <img src="output/E.svg" class="logo-e" />
+    </div>
+
+    <div><img src="output/Logo.svg" /></div>
+    <div><img src="output/Sprite.svg" /></div>
+
+</body>
+</html>
