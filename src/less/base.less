@@ -19,7 +19,7 @@
     width: @char-size;
     height: @char-size;
     background-size: (@char-size * 5) @char-size;
-    background-image: url("../logo/avine-sprite-@{sprite-size}.png");
+    background-image: url("../logo/avine-sprite.svg");
     animation: @animation-props;
   }
 
@@ -45,14 +45,14 @@
   }
 
   [data-char="n"] {
-    z-index: 2;
+    z-index: 1;
     background-position: -(@char-size * 3);
     left: @left-n;
     animation-name: @anim-n;
   }
 
   [data-char="e"] {
-    z-index: 1;
+    z-index: 2;
     background-position: -(@char-size * 4);
     left: @left-e;
     animation-name: @anim-e;

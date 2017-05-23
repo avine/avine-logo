@@ -17,7 +17,7 @@
 
 // --- don't touch below ---
 
-@sprite-size: 2 * @base-size;
+@sprite-size: @base-size; // TODO replace @sprite-size with @base-size
 
 @anim-x: ~"@{class}";
 
@@ -34,6 +34,7 @@
 
 @shift-v: (@char-line + 2 * @char-edge + @char-edge);
 @shift-i: (@char-line + 2 * @char-edge);
+@shift-e: (@char-size - @char-line - @char-edge);
 
 @spacing-delta: @char-edge; // choose `@char-edge` or `0`
 
@@ -41,7 +42,7 @@
 @left-v: (@left-a + @shift-v - @spacing-delta);
 @left-i: (@left-v + @shift-i - @spacing-delta);
 @left-n: (@left-i + @char-size - @spacing-delta);
-@left-e: (@left-n + @char-size - @spacing-delta);
+@left-e: (@left-n + @shift-e - @spacing-delta);
 
 @logo-size: (@left-e + @char-size);
 @logo-margin: (@char-size / 8);
