@@ -6,4 +6,4 @@ My personal logo
 
 ![Avine logo](./screenshot.png)
 
-[View demo](http://logo.avine.fr)
+[View demo](https://avine.io/logo)
