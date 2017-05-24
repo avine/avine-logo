@@ -14,13 +14,15 @@
   }
 
   [data-char] {
-    position: absolute;
-    left: 0;
-    width: @char-size;
-    height: @char-size;
-    background-size: (@char-size * 5) @char-size;
-    background-image: url("../logo/avine-sprite.svg");
-    animation: @animation-props;
+    &, &:after {
+      position: absolute;
+      left: 0;
+      width: @char-size;
+      height: @char-size;
+      background-size: (@char-size * 6) @char-size;
+      background-image: url("../logo/avine-sprite.svg");
+      animation: @animation-props;
+    }
   }
 
   [data-char="a"] {
@@ -42,6 +44,15 @@
     background-position: -(@char-size * 2);
     left: @left-i;
     animation-name: @anim-i;
+
+    // This is the "i" point!
+    &:after {
+      content: "";
+      z-index: 5;
+      background-position: -(@char-size * 5);
+      left: 0;
+      animation-name: @anim-p;
+    }
   }
 
   [data-char="n"] {

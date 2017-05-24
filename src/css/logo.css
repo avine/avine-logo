@@ -10,16 +10,17 @@
   margin: 0 auto;
   width: 800px;
   height: 256px;
-  animation: avn-logo 8s ease-in-out 4s 2 alternate;
+  animation: avn-logo 8s ease-in-out 4s 2;
 }
-.avn-logo [data-char] {
+.avn-logo [data-char],
+.avn-logo [data-char]:after {
   position: absolute;
   left: 0;
   width: 256px;
   height: 256px;
-  background-size: 1280px 256px;
+  background-size: 1536px 256px;
   background-image: url("../logo/avine-sprite.svg");
-  animation: 8s ease-in-out 4s 2 alternate;
+  animation: 8s ease-in-out 4s 2;
 }
 .avn-logo [data-char="a"] {
   z-index: 4;
@@ -38,6 +39,13 @@
   background-position: -512px;
   left: 112px;
   animation-name: avn-logo-i;
+}
+.avn-logo [data-char="i"]:after {
+  content: "";
+  z-index: 5;
+  background-position: -1280px;
+  left: 0;
+  animation-name: avn-logo-p;
 }
 .avn-logo [data-char="n"] {
   z-index: 1;
@@ -217,6 +225,26 @@
   80% {
     opacity: 1;
     left: 544px;
+  }
+}
+@keyframes avn-logo-p {
+  14% {
+    top: 0;
+  }
+  17% {
+    top: 8px;
+  }
+  20% {
+    top: 0;
+  }
+  64% {
+    top: 0;
+  }
+  67% {
+    top: 8px;
+  }
+  70% {
+    top: 0;
   }
 }
 /*# sourceMappingURL=logo.css.map */

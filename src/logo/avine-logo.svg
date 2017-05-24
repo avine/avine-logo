@@ -178,12 +178,16 @@
                 </g>
             </g>
         </g>
-        <g id="I" transform="translate(320.000000, 0.000000)">
-            <g>
+        <g id="I-(line)" transform="translate(320.000000, 0.000000)">
+            <g id="I">
                 <g id="line-right">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-18"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"></use>
                 </g>
+            </g>
+        </g>
+        <g id="I-(point)" transform="translate(320.000000, 0.000000)">
+            <g id="I">
                 <g id="point">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-20"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
