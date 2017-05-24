@@ -122,14 +122,18 @@
                     </g>
                 </g>
             </g>
-            <g id="shadow-addon-12px" transform="translate(180.000000, 16.000000)">
-                <g id="shadow-base-symbol" transform="translate(6.000000, 208.000000) scale(-1, 1) translate(-6.000000, -208.000000) translate(0.000000, 192.000000)">
-                    <rect id="shadow" fill-opacity="0.3" fill="url(#linearGradient-9)" x="0" y="0" width="12" height="32"></rect>
-                    <rect id="light" fill="url(#linearGradient-10)" opacity="0.7" x="0" y="0" width="12" height="1"></rect>
+            <g id="shadow-addon" transform="translate(32.000000, 16.000000)">
+                <g id="shadow-base-symbol" transform="translate(128.000000, 208.000000) scale(-1, 1) translate(-128.000000, -208.000000) translate(96.000000, 192.000000)">
+                    <rect id="shadow" fill-opacity="0.3" fill="url(#linearGradient-9)" x="0" y="0" width="64" height="32"></rect>
+                    <rect id="light" fill="url(#linearGradient-10)" opacity="0.7" x="0" y="0" width="64" height="1"></rect>
                 </g>
-                <g id="shadow-base-symbol" transform="translate(6.000000, 16.000000) scale(-1, 1) translate(-6.000000, -16.000000) ">
-                    <rect id="shadow" fill-opacity="0.3" fill="url(#linearGradient-9)" x="0" y="0" width="12" height="32"></rect>
-                    <rect id="light" fill="url(#linearGradient-10)" opacity="0.7" x="0" y="0" width="12" height="1"></rect>
+                <g id="shadow-base-symbol" transform="translate(152.000000, 16.000000) scale(-1, 1) translate(-152.000000, -16.000000) translate(144.000000, 0.000000)">
+                    <rect id="shadow" fill-opacity="0.3" fill="url(#linearGradient-9)" x="0" y="0" width="16" height="32"></rect>
+                    <rect id="light" fill="url(#linearGradient-10)" opacity="0.7" x="0" y="0" width="16" height="1"></rect>
+                </g>
+                <g id="shadow-base-symbol">
+                    <rect id="shadow" fill-opacity="0.3" fill="url(#linearGradient-9)" x="0" y="0" width="48" height="32"></rect>
+                    <rect id="light" fill="url(#linearGradient-10)" opacity="0.7" x="0" y="0" width="48" height="1"></rect>
                 </g>
             </g>
             <g id="A">
