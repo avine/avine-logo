@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "exit 0",
+    "colorize": "node ./colorize.js",
     "less": "lessc --autoprefix='last 2 versions' --source-map src/less/index.less src/css/logo.css",
     "postless": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
     "less-alt": "lessc --autoprefix='last 2 versions' --source-map src/less-alt/index.less src/css/logo.css",
