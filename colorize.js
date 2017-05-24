@@ -1,5 +1,6 @@
 
 const colors = [
+  { value: '#aaa', name: 'dark' },
   { value: '#337ab7', name: 'blue' },
   { value: '#f0ad4e', name: 'yellow' },
   { value: '#d9534f', name: 'red' }
