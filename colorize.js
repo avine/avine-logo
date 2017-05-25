@@ -18,7 +18,12 @@ colors.forEach(color => {
 
     let content = fs.readFileSync(srcFile, 'utf8');
 
-    content = content.replace(/#FFFFFF/g, color.value);
+    let pattern = /#FFFFFF/g;
+    if (suffix === 'ico') {
+      pattern = /#444444/g;
+    }
+
+    content = content.replace(pattern, color.value);
 
     const targetFile = `${srcPath}colors/avine-${suffix}-${color.name}.svg`;
 
