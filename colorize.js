@@ -1,6 +1,6 @@
 
 const colors = [
-  { value: '#aaa', name: 'dark' },
+  { value: '#aaaaaa', name: 'dark' },
   { value: '#337ab7', name: 'blue' },
   { value: '#f0ad4e', name: 'yellow' },
   { value: '#d9534f', name: 'red' }
@@ -18,9 +18,9 @@ colors.forEach(color => {
 
     let content = fs.readFileSync(srcFile, 'utf8');
 
-    let pattern = /#FFFFFF/g;
+    let pattern = /#FFFFFF/g; // Match the logo foreground
     if (suffix === 'ico') {
-      pattern = /#444444/g;
+      pattern = /#444444/g; // Only match the logo background
     }
 
     content = content.replace(pattern, color.value);

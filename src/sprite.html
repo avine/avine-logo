@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <title>Avine sprite</title>
+  <title>Sprite - Avine branding</title>
 
+  <link rel="shortcut icon" href="favicon.ico" />
   <link type="text/css" rel="stylesheet" href="css/logo.css" />
 
   <style>
@@ -13,45 +14,63 @@
       font: 16px normal Arial, Helvetica, sans-serif;
       background-color: #212121;
       text-align: center;
-      color: #424242;
+      color: #555;
     }
     p {
-      line-height: 1.5em;
+      margin: 1.6em;
+      line-height: 1.3em;
     }
     a {
-      color: #757575 !important;
+      color: #888 !important;
+    }
+    .avn-logo + p {
+      margin-top: 0;
+    }
+    header {
+      position: fixed;
+      right: 0;
+      top: 100px;
+      width: 175px;
+      padding: 0.5em;
+      box-shadow: 0 0 10px #000;
+      border: 1px solid #777;
+      background-color: #444;
+      color: #ccc;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
     }
   </style>
 </head>
 <body>
+  <header>Avine sprite</header>
 
-  <p>scale 1</p>
   <div class="avn-logo">
     <div>
       <i data-char="a"></i><i data-char="v"></i><i data-char="i"></i><i data-char="n"></i><i data-char="e"></i>
     </div>
   </div>
+  <p>scale 1</p>
 
-  <p>scale 1/2</p>
   <div class="avn-logo avn-logo-scale05">
     <div>
       <i data-char="a"></i><i data-char="v"></i><i data-char="i"></i><i data-char="n"></i><i data-char="e"></i>
     </div>
   </div>
+  <p>scale 1/2</p>
 
-  <p>scale 1/4</p>
   <div class="avn-logo avn-logo-scale025">
     <div>
       <i data-char="a"></i><i data-char="v"></i><i data-char="i"></i><i data-char="n"></i><i data-char="e"></i>
     </div>
   </div>
+  <p>scale 1/4</p>
 
-  <p>scale 1/8</p>
   <div class="avn-logo avn-logo-scale0125">
     <div>
       <i data-char="a"></i><i data-char="v"></i><i data-char="i"></i><i data-char="n"></i><i data-char="e"></i>
     </div>
   </div>
+  <p>scale 1/8</p>
 
   <p><br /><a href="#" id="toggle-no-anim">disable animation</a></p>
   <script>
