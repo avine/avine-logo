@@ -179,7 +179,7 @@
             </g>
         </g>
         <g id="I" transform="translate(320.000000, 0.000000)">
-            <g id="I-(line)">
+            <g id="I-line">
                 <g id="I">
                     <g id="line-right">
                         <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-18"></use>
@@ -187,7 +187,7 @@
                     </g>
                 </g>
             </g>
-            <g id="I-(point)">
+            <g id="I-point">
                 <g id="I">
                     <g id="point">
                         <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-20"></use>

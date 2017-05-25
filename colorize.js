@@ -10,7 +10,7 @@ const fs = require('fs');
 
 const srcPath = './src/logo/';
 
-const suffixes = ['icon', 'logo', 'sprite'];
+const suffixes = ['logo', 'sprite', 'icon', 'ico'];
 
 colors.forEach(color => {
   suffixes.forEach(suffix => {
