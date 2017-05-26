@@ -45,6 +45,14 @@ p {
   text-align: center;
 }
 
+.links a {
+  margin: 0 0.25em;
+  padding: 0.3em 0.6em;
+  border-radius: 3px;
+  background-color: rgba(0,0,0, 0.1);
+  text-decoration: none !important;
+}
+
 .ribbon {
   z-index: 9;
   position: fixed;
