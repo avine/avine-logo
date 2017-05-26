@@ -10,7 +10,7 @@
     "dir:copy-logo": "cp -r src/logo/ dist/logo/",
     "dir:copy-helper": "shx cp src/helper.css dist/",
     "dir:copy": "npm run dir:copy-logo && npm run dir:copy-helper",
-    "dir": "npm run dir:clean && npm run dir:make && npm run dir:copy",
+    "dir": "npm run dir:clean -s && npm run dir:make -s && npm run dir:copy -s",
     "colorize": "node ./colorize.js",
     "favicon-generate": "real-favicon generate faviconDescription.json dist/faviconData.json dist/",
     "favicon-inject": "real-favicon inject dist/faviconData.json dist/ src/*.html",

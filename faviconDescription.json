@@ -13,8 +13,9 @@
 		},
 		"desktopBrowser": {},
 		"windows": {
+      "masterPicture": "src/logo/avine-icon.svg",
 			"pictureAspect": "noChange",
-			"backgroundColor": "#da532c",
+			"backgroundColor": "#444444",
 			"onConflict": "override",
 			"assets": {
 				"windows80Ie10Tile": false,
@@ -41,8 +42,9 @@
 			}
 		},
 		"safariPinnedTab": {
+      "masterPicture": "src/logo/avine-icon.svg",
 			"pictureAspect": "silhouette",
-			"themeColor": "#444"
+			"themeColor": "#444444"
 		}
 	},
 	"settings": {
