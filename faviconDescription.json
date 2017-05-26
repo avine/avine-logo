@@ -1,6 +1,6 @@
 {
 	"masterPicture": "src/logo/avine-ico.svg",
-	"iconsPath": "/",
+	"iconsPath": "./",
 	"design": {
 		"ios": {
 			"pictureAspect": "noChange",
@@ -14,6 +14,7 @@
 		"desktopBrowser": {},
 		"windows": {
       "masterPicture": "src/logo/avine-icon.svg",
+    	"iconsPath": "./",
 			"pictureAspect": "noChange",
 			"backgroundColor": "#444444",
 			"onConflict": "override",
@@ -43,6 +44,7 @@
 		},
 		"safariPinnedTab": {
       "masterPicture": "src/logo/avine-icon.svg",
+    	"iconsPath": "./",
 			"pictureAspect": "silhouette",
 			"themeColor": "#444444"
 		}
