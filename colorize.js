@@ -11,6 +11,8 @@ const fs = require('fs');
 
 const srcPath = './src/logo/';
 
+const distPath = './dist/logo/';
+
 const suffixes = ['logo', 'sprite', 'icon', 'ico'];
 
 colors.forEach(color => {
@@ -26,7 +28,7 @@ colors.forEach(color => {
 
     content = content.replace(pattern, color.value);
 
-    const targetFile = `${srcPath}colors/avine-${suffix}-${color.name}.svg`;
+    const targetFile = `${distPath}colors/avine-${suffix}-${color.name}.svg`;
 
     console.log(targetFile);
 

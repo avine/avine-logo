@@ -4,6 +4,6 @@
 
 My personal logo
 
-![Avine logo](./screenshot.png)
+![Avine logo](./logo/avine-logo.svg)
 
 [View demo](https://avine.io/logo)
