@@ -1,4 +1,5 @@
 
+// Colors configuration
 const colors = [
   { value: '#aaaaaa', name: 'dark' },
   { value: '#337ab7', name: 'blue' },

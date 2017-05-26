@@ -13,7 +13,7 @@
         </filter>
         <linearGradient x1="14.5490641%" y1="14.3885538%" x2="21.4597829%" y2="14.3885538%" id="linearGradient-3">
             <stop stop-color="#000000" offset="0%"></stop>
-            <stop stop-color="#aaa" stop-opacity="0" offset="100%"></stop>
+            <stop stop-color="#aaaaaa" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
         <path d="M194,16 L222,16 L222,16 C223.104569,16 224,16.8954305 224,18 L224,238 L224,238 C224,239.104569 223.104569,240 222,240 L192,240 L192,18 L192,18 C192,16.8954305 192.895431,16 194,16 Z" id="path-4"></path>
         <filter x="-15.6%" y="-2.2%" width="131.2%" height="104.5%" filterUnits="objectBoundingBox" id="filter-5">
@@ -58,12 +58,12 @@
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
         <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-16">
-            <stop stop-color="#aaa" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#aaaaaa" stop-opacity="0" offset="0%"></stop>
             <stop stop-color="#000000" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-17">
-            <stop stop-color="#aaa" offset="0%"></stop>
-            <stop stop-color="#aaa" stop-opacity="0" offset="100%"></stop>
+            <stop stop-color="#aaaaaa" offset="0%"></stop>
+            <stop stop-color="#aaaaaa" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
         <rect id="path-18" x="0" y="16" width="32" height="224" rx="2"></rect>
         <filter x="-15.6%" y="-2.2%" width="131.2%" height="104.5%" filterUnits="objectBoundingBox" id="filter-19">
@@ -108,7 +108,7 @@
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-30">
-            <stop stop-color="#aaa" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#aaaaaa" stop-opacity="0" offset="0%"></stop>
             <stop stop-color="#000000" offset="100%"></stop>
         </linearGradient>
         <path d="M2,16 L32,16 L32,238 L32,238 C32,239.104569 31.1045695,240 30,240 L2,240 L2,240 C0.8954305,240 1.3527075e-16,239.104569 0,238 L0,18 L0,18 C-1.3527075e-16,16.8954305 0.8954305,16 2,16 Z" id="path-31"></path>
@@ -123,7 +123,7 @@
         <g id="N" transform="translate(368.000000, 0.000000)">
             <g>
                 <g id="line-diagonal">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-1"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                 </g>
                 <g id="shadow-right" transform="translate(112.000000, 136.000000) scale(-1, -1) translate(-112.000000, -136.000000) translate(0.000000, 16.000000)" fill-opacity="0.3" fill="url(#linearGradient-3)">
@@ -133,11 +133,11 @@
                     <path d="M32,16 L223.482409,227.428493 L223.482409,227.428493 C223.815521,227.796304 224,228.274818 224,228.771052 L224,238 L224,238 C224,239.104569 223.104569,240 222,240 L192.88699,240 L192.88699,240 C192.32219,240 191.783721,239.761191 191.404582,239.342559 L0.517591253,28.571507 L0.517591253,28.571507 C0.18447942,28.203696 6.4115841e-17,27.7251824 4.4408921e-16,27.2289481 L0,18 L0,18 C-1.3527075e-16,16.8954305 0.8954305,16 2,16 L32,16 Z" id="shadow"></path>
                 </g>
                 <g id="line-right">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-4"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
                 </g>
                 <g id="line-left">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-6"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
                 </g>
             </g>
@@ -145,19 +145,19 @@
         <g id="E" transform="translate(560.000000, 16.000000)">
             <g>
                 <g id="line-bottom">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-8"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-8"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
                 </g>
                 <g id="line-top">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-10"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-10"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
                 </g>
                 <g id="line-left">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-12"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-12"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
                 </g>
                 <g id="line-middle">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-14"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-14"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
                 </g>
                 <g id="shadow-base-symbol" transform="translate(32.000000, 192.000000)">
@@ -182,7 +182,7 @@
             <g id="I-line">
                 <g id="I">
                     <g id="line-right">
-                        <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-18"></use>
+                        <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-18"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"></use>
                     </g>
                 </g>
@@ -190,7 +190,7 @@
             <g id="I-point">
                 <g id="I">
                     <g id="point">
-                        <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-20"></use>
+                        <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-20"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
                     </g>
                 </g>
@@ -199,14 +199,14 @@
         <g id="V" transform="translate(80.000000, 16.000000)">
             <g>
                 <g id="line-diagonal">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-22"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-22"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-23)" xlink:href="#path-22"></use>
                 </g>
                 <g id="shadow-diagonal" transform="translate(112.000000, 120.000000) scale(-1, -1) translate(-112.000000, -120.000000) " fill-opacity="0.3" fill="url(#linearGradient-3)">
                     <path d="M32,16 L223.482409,227.428493 L223.482409,227.428493 C223.815521,227.796304 224,228.274818 224,228.771052 L224,238 L224,238 C224,239.104569 223.104569,240 222,240 L192.88699,240 L192.88699,240 C192.32219,240 191.783721,239.761191 191.404582,239.342559 L0.517591253,28.571507 L0.517591253,28.571507 C0.18447942,28.203696 6.4115841e-17,27.7251824 4.4408921e-16,27.2289481 L0,18 L0,18 C-1.3527075e-16,16.8954305 0.8954305,16 2,16 L32,16 Z" id="shadow"></path>
                 </g>
                 <g id="line-right">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-24"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-24"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-25)" xlink:href="#path-24"></use>
                 </g>
             </g>
@@ -214,11 +214,11 @@
         <g id="A" transform="translate(16.000000, 0.000000)">
             <g>
                 <g id="line-diagonal">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-26"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-26"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-27)" xlink:href="#path-26"></use>
                 </g>
                 <g id="line-middle">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-28"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-28"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-29)" xlink:href="#path-28"></use>
                 </g>
                 <g id="shadow-base-symbol" transform="translate(32.000000, 112.000000)">
@@ -235,7 +235,7 @@
                     <path d="M32,16 L223.482409,227.428493 L223.482409,227.428493 C223.815521,227.796304 224,228.274818 224,228.771052 L224,238 L224,238 C224,239.104569 223.104569,240 222,240 L192.88699,240 L192.88699,240 C192.32219,240 191.783721,239.761191 191.404582,239.342559 L0.517591253,28.571507 L0.517591253,28.571507 C0.18447942,28.203696 6.4115841e-17,27.7251824 4.4408921e-16,27.2289481 L0,18 L0,18 C-1.3527075e-16,16.8954305 0.8954305,16 2,16 L32,16 Z" id="shadow"></path>
                 </g>
                 <g id="line-left">
-                    <use fill="#aaa" fill-rule="evenodd" xlink:href="#path-31"></use>
+                    <use fill="#aaaaaa" fill-rule="evenodd" xlink:href="#path-31"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-32)" xlink:href="#path-31"></use>
                 </g>
             </g>

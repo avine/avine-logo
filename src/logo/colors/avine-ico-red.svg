@@ -78,7 +78,7 @@
         </filter>
     </defs>
     <g id="Ico" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="background" fill="#d9534f" x="0" y="0" width="256" height="256" rx="16"></rect>
+        <rect id="background" fill="#d9534f" x="0" y="0" width="256" height="256" rx="8"></rect>
         <g id="Icon" transform="translate(16.000000, 0.000000)">
             <g id="E" transform="translate(0.000000, 16.000000)">
                 <g>

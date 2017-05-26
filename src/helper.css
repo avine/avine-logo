@@ -1,0 +1,64 @@
+
+body {
+  margin: 0;
+  font: 16px normal Arial, Helvetica, sans-serif;
+  background-color: #212121;
+  color: #555;
+}
+
+body > header {
+  background-color: #673AB7;
+  overflow: hidden;
+}
+
+body > main {
+  background-color: #fff;
+}
+
+body > main > * {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px;
+  line-height: 1.5em;
+}
+
+body > footer {
+  padding: 32px 0;
+  background-color: #212121;
+  text-align: center;
+}
+
+a {
+  color: #888 !important;
+}
+
+p {
+  margin: 1.6em;
+  line-height: 1.3em;
+}
+
+.avn-logo + p {
+  margin-top: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.ribbon {
+  z-index: 9;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  width: 175px;
+  margin: 0;
+  padding: 0.5em;
+  box-shadow: 0 0 10px #000;
+  border: 1px solid #777;
+  background-color: #444;
+  color: #ccc;
+  font-size: 1em;
+  font-weight: normal;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}

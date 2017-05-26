@@ -12,7 +12,7 @@
     "postless-alt": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
     "watch": "chokidar 'src/less/**/*.less' -c 'npm run less'",
     "start": "browser-sync start --server src/ --serveStatic --no-notify",
-    "dev": "npm run watch & npm start -- --files src/*.html src/css/*.css --no-inject-changes"
+    "dev": "npm run watch & npm start -- --files src/*.html src/css/*.css src/logo/** --no-inject-changes"
   },
   "repository": {
     "type": "git",
