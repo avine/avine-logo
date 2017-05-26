@@ -8,9 +8,7 @@ My personal logo
 
 [View demo](https://avine.io/logo)
 
-### Usage
-
-#### Installation
+## Installation
 
 ```shell
 npm install
@@ -18,7 +16,7 @@ npm run build
 npm start
 ```
 
-#### package.json scripts
+## package.json scripts
 
 Create folders and copy files to the `./dist` directory
 
