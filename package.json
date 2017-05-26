@@ -5,19 +5,32 @@
   "main": "index.js",
   "scripts": {
     "test": "exit 0",
-    "less": "lessc --autoprefix='last 2 versions' --source-map src/less/index.less src/css/logo.css",
-    "postless": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
-    "less-alt": "lessc --autoprefix='last 2 versions' --source-map src/less-alt/index.less src/css/logo.css",
-    "postless-alt": "cleancss --source-map src/css/logo.css -o src/css/logo.min.css",
-    "watch": "chokidar 'src/less/**/*.less' -c 'npm run less'",
-    "start": "browser-sync start --server src/ --serveStatic --no-notify",
-    "dev": "npm run watch & npm start -- --files src/*.html src/css/*.css --no-inject-changes"
+    "dir:clean": "shx rm -rf dist/",
+    "dir:make": "shx mkdir -p dist/logo/colors/ dist/css/",
+    "dir:copy-logo": "cp -r src/logo/ dist/logo/",
+    "dir:copy-helper": "shx cp src/helper.css dist/",
+    "dir:copy": "npm run dir:copy-logo && npm run dir:copy-helper",
+    "dir": "npm run dir:clean && npm run dir:make && npm run dir:copy",
+    "colorize": "node ./colorize.js",
+    "favicon-generate": "real-favicon generate faviconDescription.json dist/faviconData.json dist/",
+    "favicon-inject": "real-favicon inject dist/faviconData.json dist/ src/*.html",
+    "favicon": "npm run favicon-generate && npm run favicon-inject",
+    "less": "lessc --autoprefix='last 2 versions' --source-map --source-map-less-inline src/less/index.less dist/css/logo.css",
+    "postless": "cleancss --source-map dist/css/logo.css -o dist/css/logo.min.css",
+    "build": "npm run dir && npm run colorize && npm run favicon && npm run less",
+    "watch:logo": "chokidar 'src/logo/**' -c 'npm run dir:copy-logo && npm run colorize'",
+    "watch:helper": "chokidar 'src/helper.css' -c 'npm run dir:copy-helper'",
+    "watch:html": "chokidar 'src/*.html' -c 'npm run favicon-inject'",
+    "watch:less": "chokidar 'src/less/**/*.less' -c 'npm run less'",
+    "watch": "npm run watch:logo & npm run watch:helper & npm run watch:html & npm run watch:less",
+    "start": "browser-sync start --server dist/ --serveStatic --no-notify",
+    "dev": "npm run watch & npm start -- --files dist/** --no-inject-changes"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/avine/avine-logo.git"
   },
-  "author": "avine <s.francel@avine.fr>",
+  "author": "Stéphane Francel <contact@avine.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/avine/avine-logo/issues"
@@ -26,8 +39,10 @@
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "chokidar-cli": "^1.2.0",
+    "cli-real-favicon": "0.0.6",
     "less": "^2.7.2",
     "less-plugin-autoprefix": "^1.5.1",
-    "less-plugin-clean-css": "^1.5.1"
+    "less-plugin-clean-css": "^1.5.1",
+    "shx": "^0.2.2"
   }
 }
