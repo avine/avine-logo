@@ -18,13 +18,13 @@ npm start
 
 ## package.json scripts
 
-Create folders and copy files to the `./dist` directory
+Create folders and copy files to `./dist` directory
 
 ```shell
 npm run dir
 ```
 
-Use `./src/logo/*.svg` to create alternative colors.
+Use `./src/logo/*.svg` images to create alternative colors.
 Put the result in `./dist/logo/colors/*.svg`.
 
 ```shell
@@ -38,7 +38,7 @@ Copy html files from `./src/*.html` to `./dist` and inject favicons markup.
 npm run favicon
 ```
 
-Process less compilation
+Compile `less` to `css`
 
 ```shell
 npm run less
