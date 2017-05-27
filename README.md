@@ -4,7 +4,7 @@
 
 My personal logo
 
-![Avine logo](./src/logo/avine-logo.svg)
+![Avine logo](https://avine.io/logo/logo/avine-logo.svg)
 
 [View demo](https://avine.io/logo)
 
