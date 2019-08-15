@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Sprite - Avine branding</title>
+  <link type="text/css" rel="stylesheet" href="helper.css">
+  <link type="text/css" rel="stylesheet" href="css/logo.css">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#444444">
+<link rel="shortcut icon" href="./favicon.ico">
+<meta name="msapplication-TileColor" content="#444444">
+<meta name="msapplication-TileImage" content="./mstile-144x144.png">
+<meta name="msapplication-config" content="./browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body class="align-center">
+  <h1 class="ribbon">Avine sprite</h1>
+  <div class="avn-logo">
+    <div>
+      <i data-char="a"></i><i data-char="v"></i><i data-char="i"></i><i data-char="n"></i><i data-char="e"></i>
+    </div>
+  </div>
+  <p>scale 1</p>
+  <div class="avn-logo avn-logo-scale05">
+    <div>
+      <i data-char="a"></i><i data-char="v"></i><i data-char="i"></i><i data-char="n"></i><i data-char="e"></i>
+    </div>
+  </div>
+  <p>scale 1/2</p>
+  <div class="avn-logo avn-logo-scale025">
+    <div>
+      <i data-char="a"></i><i data-char="v"></i><i data-char="i"></i><i data-char="n"></i><i data-char="e"></i>
+    </div>
+  </div>
+  <p>scale 1/4</p>
+  <div class="avn-logo avn-logo-scale0125">
+    <div>
+      <i data-char="a"></i><i data-char="v"></i><i data-char="i"></i><i data-char="n"></i><i data-char="e"></i>
+    </div>
+  </div>
+  <p>scale 1/8</p>
+  <p><br><a href="#" id="toggle-no-anim">disable animation</a></p>
+  <script>
+    (function () {
+      var noAnim = false;
+      document.querySelector('#toggle-no-anim').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelectorAll('.avn-logo').forEach(item => {
+          if (noAnim) {
+            item.classList.remove('avn-logo-no-anim');
+            this.innerHTML = 'disable animation';
+          } else {
+            item.classList.add('avn-logo-no-anim');
+            this.innerHTML = '\<i>enable animation\</i>';
+          }
+        });
+        noAnim = !noAnim;
+      });
+    })();
+  </script>
+  <a class="back" href="index.html">Back</a>
+</body>
+</html>
